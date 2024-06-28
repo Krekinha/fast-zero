@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from pydantic import BaseModel
 
 
@@ -15,6 +17,7 @@ class UserPublic(BaseModel):
     id: int
     username: str
     email: str
+    updated_at: datetime
 
 
 class UserList(BaseModel):
